@@ -17,3 +17,12 @@ Sumber data : [Jurnal Komputasi FMIPA Unila](https://jurnal.fmipa.unila.ac.id/ko
 
 ![data jurnal](https://github.com/adjipangestu/TEXT-MINING-Text-Preprocessing-Python-Django-menggunakan-NLTK/blob/master/Screenshot%20from%202019-09-30%2021-00-25.png)
 
+### Data Kelas Keilmuan
+
+![data jurnal](https://github.com/adjipangestu/TEXT-MINING-Text-Preprocessing-Python-Django-menggunakan-NLTK/blob/master/Screenshot%20from%202019-09-30%2021-01-11.png)
+
+### Hasil Preproses NLTK
+
+![data jurnal](https://github.com/adjipangestu/TEXT-MINING-Text-Preprocessing-Python-Django-menggunakan-NLTK/blob/master/Screenshot%20from%202019-09-30%2021-10-48.png)
+
+![data jurnal](https://github.com/adjipangestu/TEXT-MINING-Text-Preprocessing-Python-Django-menggunakan-NLTK/blob/master/Screenshot%20from%202019-09-30%2021-10-44.png)
