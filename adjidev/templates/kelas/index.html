@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kelas Keilmuan</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand mr-auto mr-lg-0" href="#">Text Mining</a>
+        <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <main role="main" class="container">
+        <div class="my-3 p-3 bg-white rounded shadow-sm">
+            <h3><strong>Kelas Keilmuan</strong></h3>
+            <hr>
+            <a href="/kelas-add" class="btn btn-primary">Tambah Data</a>
+            <div class="table-resposive pt-3">
+                <table class="table table-striped table-bordered table-sm">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>No</th>
+                            <th>Kelas Keilmuan</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for kelases in kelas %}
+                        <tr>
+                            <td>{{ forloop.counter }}</td>
+                            <td>{{ kelases.nama_kelas }}</td>
+                            <td>
+                                <a href="/edit-kelas/{{ kelases.id }}" class="btn btn-warning btn-sm"> Edit</a>
+                                <a href="/hapus-kelas/{{ kelases.id }}" class="btn btn-danger btn-sm"> Hapus</a>
+                            </td>
+                        </tr>
+
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

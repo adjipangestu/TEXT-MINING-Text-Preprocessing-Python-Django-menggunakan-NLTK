@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Text Mining</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand mr-auto mr-lg-0" href="#">Text Mining</a>
+        <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <main role="main" class="container">
+        <div class="my-3 p-3 bg-white rounded shadow-sm">
+            <h1>Preproses</h1>
+            <div class="pt-3">
+                <h3>Text Lowercase</h3>
+                <p>{{ lower }}</p>
+                <hr>
+                <h3>Remove Numbers</h3>
+                <p>{{ remove_numbers }}</p>
+                <hr>
+                <h3>Remove Punctuation</h3>
+                <p>{{ remove_punctuation }}</p>
+                <hr>
+                <h3>Remove Whitespaces</h3>
+                <p>{{ remove_whitespace }}</p>
+                <hr>
+                <h3>Remove default stopwords</h3>
+                <p>{{ remove_stopwords }}</p>
+                <hr>
+                <h3>Lemmatization</h3>
+                <p>{{ lemmatize_word }}</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
