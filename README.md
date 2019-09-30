@@ -1,6 +1,7 @@
-# TEXT-MINING-Text-Preprocessing-Python-Django-menggunakan-NLTK
+# TEXT MINING - Text Preprocessing Python framework Django menggunakan NLTK
 
-Text Preprocessing Python Framework Django menggunakan library NLTK dan database MySQL
+NLP (Natural Language Processing)
+Text Preprocessing Python Framework Django menggunakan library NLTK (Natural Language Toolkit) dan database MySQL
 
 ## Sumber data
 
